@@ -1,4 +1,4 @@
 # Authors
-Piotr Szczepański
-Dominik Dorosz
-Łukasz Kwinta
+- Piotr Szczepański
+- Dominik Dorosz
+- Łukasz Kwinta
