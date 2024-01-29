@@ -1,0 +1,750 @@
+@font-face {
+font-family: 'roboto';
+src: url(../font/roboto.ttf)
+format('truetype');
+font-weight:default;
+font-style: default;
+}
+.pierwiastek {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin: 6px 6px 6px 6px;
+    transition: 0.5s;
+}
+.pierwiastek:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.5s;
+    
+}
+.wypelniacz{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin: 2px 2px 2px 2px;
+}
+#uop {
+    margin: auto;
+    width: 90%;
+    padding: 5px 5px 5px 5px;
+    filter: none;
+    background-color: #dbdbdb;
+    opacity: 0.9;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.przedzial {
+    visibility: hidden;
+}
+
+h1{
+    text-align: center;
+/*    box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.8);*/
+    font-size: 30pt;
+    background-color: #c9c9c9;
+/*    border: 0.5px black solid;*/
+/*    border-radius: 8px;*/
+    margin-left:5%;
+    margin-right:5%;
+    opacity: 0.9;
+}
+.tlo{
+    height: 100%;
+/*    box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.8);*/
+    padding-bottom: 14px;
+    background-color: #dbdbdb;
+    opacity: 0.9;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+    margin-top: 20px;
+/*    border-radius: 8px;*/
+}
+
+.poj{
+    width: 44%;
+    margin-top: 20px;
+    float: left;
+    height: 250px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom:20px;
+}
+
+.left {
+    margin-left: 5%;
+    float: left;
+    margin-right: 2%;
+}
+
+.right{
+    margin-right: 5%;
+    float: right;
+}
+.center {
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+    .poj{
+        float: none;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin:auto;
+        margin-top: 20px;
+    }
+}
+
+p {
+    font-size: 12px;
+    line-height: 2px;
+}
+
+
+/*Modal*/
+#modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 700px;
+    box-shadow: 3px 4px 8px 2px rgba(0,0,0,0.6);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    float: right;
+    font-size: 34px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+#modal-header {
+    padding: 2px 16px;
+    background:linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,1));
+    box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.8);
+    opacity: 0.9;
+    height: 50px
+}
+
+
+.modal-body {
+    padding: 8px 16px;
+    font-size: 20px;
+    /*box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.8);*/
+}
+.modal-text{
+    font-size: 10pt;
+}
+
+#modal-footer {
+    padding-right:30px;
+    padding-left:25px;
+    padding-top: 15px;
+    padding-bottom: 37px;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.8);
+    background:linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,1));
+    opacity: 0.9;
+}
+body {
+    font-family: roboto;
+    height: 99%;
+    background-color: #ffffff;
+    background-image: url("../css/images.jpg");
+    background-size: 500px;
+    
+}
+
+@media screen and (max-width: 500px){
+    body {text-align: center}
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.moreBtn{
+    float: right;
+    box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 13%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 0.5s;
+}
+.moreBtn:hover{
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.7);
+    transition: 0.5s;
+}
+.color1 {
+    background-color: #96ff9b;
+}
+.color2 {
+    background-color: #ffe696;
+}
+.color3 {
+    background-color: #f0ff70;
+}
+.color4 {
+    background-color: #a5d0ff;
+}
+.color5 {
+    background-color: #57e08e;
+}
+.color6 {
+    background-color: #ffcefc;
+}
+.color7 {
+    background-color: #ffa270;
+}
+.color8 {
+    background-color: #d7d2f7;
+}
+.color9 {
+    background-color: #b5fff8;
+}
+.color10 {
+    background-color: #d1d1d1;
+}
+
+#main  {
+    color: black;
+    transition: margin-left 0.5s;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    opacity: 0.9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 17px;
+    transition: 0.5s;
+}
+
+.topnav a:not(.active):hover {
+  background-color:#1c1c1c;
+    transition: 0.5s;
+}
+
+.active {
+  background-color: rgb(204, 0, 204);
+  color: white;
+}
+
+.active:hover{
+   background-color:  #8c008c;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a:not(.active){
+    float: right;
+}
+
+@media screen and (max-width: 950px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+
+      top:0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+      text-align-last: left;
+  }
+    
+}
+
+.tytul{
+    text-align: center;
+    font-size:40px;
+    background-color: #222;
+    margin: 2px 2px 2px 2px;
+}
+.pierwiastek_podstrony {
+    width: 200px;
+    height: 195px;
+    margin: auto;
+}
+
+.symbol {
+    font-size: 65pt;
+    text-align: center;
+}
+
+.z {
+    font-size: 30pt;
+}
+
+.name {
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 900;
+}
+
+.weight {
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.wlasciwosci {
+    margin-left: 20%;    
+}
+
+.podstrony {
+    width: 100%;
+    height:100%;
+    padding-top: 5px;
+}
+
+.podstrony_tabela {
+    width:35%;
+}
+
+.izotop_sqr {
+    width: 80px;
+    height: 55px;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+.td_izotop {
+    width: 15%;
+}
+
+.izotop_txt {
+    height: 100%;
+    width: 100%;
+}
+
+.tabela_izotopy {
+    width: 100%;
+}
+
+.izotopy {
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.p_izotop {
+    box-sizing: padding-box
+}
+
+
+
+.div_izotopy {
+    margin-left: 200px
+}
+
+.td_izotopy {
+   text-align: right
+}
+
+.tekst_izotopy {
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+/*    box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.8);*/
+    font-weight: 900;
+/*    border-top-left-radius: 8px;*/
+/*    border-top-right-radius: 8px;*/
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #c9c9c9;
+    opacity: 0.9;
+}
+
+.sqr_uslugi {
+    float: left;
+  display: block;
+  text-align: center;
+  height:100px;
+    width: 32%;
+    padding-top: 50px; 
+  text-decoration: none;
+    transition: 0.5s;
+    margin: 2px;
+}
+
+
+
+.uslugi {
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    z-index: 20;
+    opacity: 0.9;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px; 
+}
+
+
+@media screen and (max-width: 600px){
+    .sqr_uslugi {
+        float: none;
+        width: 70%;
+    }
+    .uslugi {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+.h2_popup{
+    box-shadow: none;
+    background: none;
+    margin-right:20px;
+}
+
+.tekst {
+    font-size:12pt;
+    line-height: normal;
+    margin-left: 5px;
+}
+
+.okres {
+    width:5px;
+    text-align: center;
+}
+
+.grupa {
+    padding-top: 30px;
+    text-align: center
+}
+
+.bez {
+    padding: inherit;
+}
+
+
+@media screen and (max-width: 900px){
+    
+}
+
+
+.index_tytul {
+    color: rgb(204, 0, 204);
+}
+
+
+
+.zastosowania {
+    margin: 2% 2% 2% 2%;
+    padding: 1% 1% 1% 1%;
+    font-weight: normal;
+}
+
+#uop_title {
+    filter:none;
+}
+
+.input {
+    padding-top: 10px;
+    width: 100%;
+    
+}
+
+#myInput {
+    background-image: url('../css/searchicon.png'); /* Add a search icon to input */
+    background-size: 22px;
+    background-color: #c9c9c9;
+    background-position: 10px 12px; 
+    background-repeat: no-repeat;
+    width: 86%;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left: 4%;
+    transition: 0.5s;
+    border: 0px solid #ddd;
+/*    border-radius: 8px;*/
+/*    box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.8);*/
+    font-size: 15pt;
+    opacity: 0.9;
+    margin-left:5%;
+    margin-right:5%;
+}
+#myInput:focus{
+    outline:none;
+    background-color: #b2b2b2;
+}
+
+#myInput:hover{
+    outline:none;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #b2b2b2;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+
+    display: none
+}
+
+.polmetale {
+    text-transform: rotate(90deg);
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.metale {
+    background-color: darkgray;
+    text-align: center;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.niemetale {
+    background-color:cadetblue;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.metale_alkaliczne {
+    text-align: center;
+    padding: 5px;
+}
+
+.no-padding {
+    padding: none;
+    margin: none;
+    line-height: normal;
+}
+
+.metale_table {
+    width: 100%;
+    height: 100%;
+}
+
+.tab_w_uop {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.tb_info {
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 900;
+    margin: 10px;
+    background-color: #c9c9c9;
+    opacity: 0.9;
+}
+
+#legend_img {
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    width: 300px;
+}
+
+#legend_img:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+
+
+
+.modal-img-cls {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);  /* Black w/ opacity */
+}
+
+.close-img {
+    position: absolute;
+    top: 70px;
+    right: 570px;
+    color: #f1f1f1;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-img:hover,
+.close-img:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption-img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-img-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.modal-img-content, #caption-img { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+
+.uslugi_color1 {
+    background-color: #d2a3ff;
+    transition: 0.5s;
+}
+.uslugi_color1:hover {
+    transition: 0.5s;
+    background-color: #a882cc;
+}
+
+.uslugi_color2 {
+    background-color: #c384ff;
+    transition: 0.5s;
+}
+.uslugi_color2:hover {
+    transition: 0.5s;
+    background-color: #9b68cc;
+}
+
+.uslugi_color3 {
+    background-color: #b05eff;
+    transition: 0.5s;
+}
+.uslugi_color3:hover {
+    transition: 0.5s;
+    background-color: #7c41b5;
+}
+
+.uslugi_color4 {
+    background-color: #8f2bef;
+    transition: 0.5s;
+}
+.uslugi_color4:hover {
+    transition: 0.5s;
+    background-color: #6e22b7;
+}
+#info {
+    margin-bottom: 20px;
+}
+#metale:hover,#niemetale:hover,#polmetale:hover,#metale_alkaliczne:hover,#metale_ziem_alkalicznych:hover,#metale_przejsciowe:hover,#metale_bloku_p:hover,#niemetale_2:hover,#lantanowce:hover,#aktynowce:hover,#gazy_szlachetne:hover{
+    cursor: pointer;
+/*    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.6); */
+    transition: 0.5s;
+}
+
+#metale:hover + .color2 {
+    visibility: hidden;
+}

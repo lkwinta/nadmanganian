@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Układ Okresowy</title>
+    <script src="../js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/uop_jquery.js"></script>
+</head>
+<body>
+    <div id="main">
+                <nav id="navMenu"></nav>
+<script src="../js/nav_html_stage2.js"></script>
+        <nav id="openNav"></nav>
+    <script src="../js/open_nav.js"></script>
+    <h1 id="uop_title"> Układ Okresowy Pierwiastków</h1>
+        
+    <div class="tlo" id="info">
+        <h2>Informacje</h2>
+        
+        <h3>Legenda</h3>
+                <img id="legend_img" src="../css/modal_img.PNG" alt="Legenda oznaczeń w układzie okresowym" onclick="openImg()">
+        
+        <h3>Kolory pierwiastków</h3>
+        
+        
+        
+        <table class="tb_info">
+            <tr>
+                    
+                <td class="metale" id="metale" colspan="5">Metale</td>
+                <td class="polmetale color5" id="polmetale" rowspan="2">Półmetale</td>
+                <td class="niemetale" id="niemetale" colspan="2">Niemetale</td>
+            </tr>
+            <tr>
+                <td class="metale_alkaliczne color2" id="metale_alkaliczne">Metale alkaliczne</td>
+                <td class="metale_alkaliczne color3" id="metale_ziem_alkalicznych">Metale <br> Ziem <br> alkalicznych</td>
+            
+                <td>
+                    <table class="tab_w_uop">
+                        <tr><td class="metale_alkaliczne color7" id="lantanowce">Lantanowce</td></tr>
+                        <tr><td class="metale_alkaliczne color8" id="aktynowce">Aktynowce</td></tr>
+                    </table>
+                 </td>
+
+                <td class="metale_alkaliczne color9" id="metale_przejsciowe">Metale Przejściowe</td>
+                <td class="metale_alkaliczne color6" id="metale_bloku_p">Metale bloku p</td>
+                <td class="metale_alkaliczne color1" id="niemetale_2">Niemetale</td>
+                <td class="metale_alkaliczne color4" id="gazy_szlachetne">Gazy szlachetne</td>
+                    
+                    
+            </tr>
+            </table>
+            
+            
+                
+        </div>
+    <table id="uop">
+        <tr>
+            <td></td>
+            <td class="grupa bez">1</td>
+            <td colspan="16"></td>
+            <td class= "grupa bez">18</td>
+        </tr>
+        <tr>
+            <td class="okres">1</td>
+            <td class="pierwiastek color1" onclick="OpenModal('Wodór','1.01','1','H','color1')"><sub>1</sub>H <p>Wodór</p> <p>1,01</p></td>
+
+            <td class="grupa"> 2</td>
+
+            <td class="wypelniacz" colspan="10" rowspan="2"></td>
+
+            <td class="grupa"> 13</td>
+            <td class="grupa"> 14</td>
+            <td class="grupa"> 15</td>
+            <td class="grupa"> 16</td>
+            <td class="grupa"> 17</td>
+
+            <td class="pierwiastek color4" onclick="OpenModal('Hel','4.00','2','He','color4')"><sub>2</sub>He <p>Hel</p><p>4,00</p></td>
+        </tr>
+
+        <tr>
+            <td class="okres">2</td>
+            <td class="pierwiastek color2" onclick="OpenModal('Lit','6.94','3','Li','color2')"><sub>3</sub>Li <p>Lit</p> <p>6,94</p></td>
+            <td class="pierwiastek color3" onclick="OpenModal('Beryl','9.01','4','Be','color3')"><sub>4</sub>Be <p>Beryl</p> <p>9,01</p></td>
+
+
+            <td class="pierwiastek color5" onclick="OpenModal('Bor','10.81','5','B','color5')"><sub>5</sub>B <p>Bor</p> <p>10,81</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Węgiel','12.01','6','C','color1')"><sub>6</sub>C <p>Węgiel</p> <p>12,01</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Azot','14.01','7','N','color1')"><sub>7</sub>N <p>Azot</p> <p>14,01</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Tlen','16.00','8','O','color1')"><sub>8</sub>O <p>Tlen</p> <p>16,00</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Fluor','19.00','9','F','color1')"><sub>9</sub>F <p>Fluor</p> <p>19,00</p></td>
+            <td class="pierwiastek color4" onclick="OpenModal('Neon','20.18','10','Ne','color4')"><sub>10</sub>Ne <p>Neon</p> <p>20,18</p></td>
+
+        </tr>
+
+        <tr>
+            <td class="okres">3</td>
+            <td class="pierwiastek color2" onclick="OpenModal('Sód','23.00','11','Na','color2')"><sub>11</sub>Na <p>Sód</p> <p>23,00</p></td>
+            <td class="pierwiastek color3" onclick="OpenModal('Magnez','24.31','12','Mg','color3')"><sub>12</sub>Mg <p>Magnez</p> <p>24,31</p></td>
+
+            <td class="grupa">3</td>
+            <td class="grupa">4</td>
+            <td class="grupa">5</td>
+            <td class="grupa">6</td>
+            <td class="grupa">7</td>
+            <td class="grupa">8</td>
+            <td class="grupa">9</td>
+            <td class="grupa">10</td>
+            <td class="grupa">11</td>
+            <td class="grupa">12</td>
+
+            <td class="pierwiastek color6" onclick="OpenModal('Glin','26.98','13','Al','color6')"><sub>13</sub>Al <p>Glin</p> <p>26,98</p></td>
+            <td class="pierwiastek color5" onclick="OpenModal('Krzem','28.08','14','Si','color5')"><sub>14</sub>Si <p>Krzem</p> <p>28,08</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Fosfor','30.97','15','P','color1')"><sub>15</sub>P <p>Fosfor</p> <p>30,97</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Siarka','32.07','16','S','color1')"><sub>16</sub>S <p>Siarka</p> <p>32,07</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Chlor','35.45','17','Cl','color1')"><sub>17</sub>Cl <p>Chlor</p> <p>35,45</p></td>
+            <td class="pierwiastek color4" onclick="OpenModal('Argon','39.95','18','Ar','color4')"><sub>18</sub>Ar <p>Argon</p> <p>39,95</p></td>
+        </tr>
+
+        <tr>
+            <td class="okres">4</td>
+            <td class="pierwiastek color2" onclick="OpenModal('Potas','39.10','19','K','color2')"><sub>19</sub>K <p>Potas</p> <p>39,10</p></td>
+            <td class="pierwiastek color3" onclick="OpenModal('Wapń','40.08','20','Ca','color3')"><sub>20</sub>Ca <p>Wapń</p> <p>40,08</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Skand','44.96','21','Sc','color9')"><sub>21</sub>Sc <p>Skand</p> <p>44,96</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Tytan','47.88','22','Ti','color9')"><sub>22</sub>Ti <p>Tytan</p> <p>47,88</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Wanad','50.94','23','V','color9')"><sub>23</sub>V <p>Wanad</p> <p>50,94</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Chrom','52.00','24','Cr','color9')"><sub>24</sub>Cr <p>Chrom</p> <p>52,00</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Mangan','54.94','25','Mn','color9')"><sub>25</sub>Mn <p>Mangan</p> <p>54,94</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Żelazo','55.85','26','Fe','color9')"><sub>26</sub>Fe <p>Żelazo</p> <p>55,85</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Kobalt','58.93','27','Co','color9')"><sub>27</sub>Co <p>Kobalt</p> <p>58,93</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Nikiel','58.69','28','Ni','color9')"><sub>28</sub>Ni <p>Nikiel</p> <p>58,69</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Miedź','63.55','29','Cu','color9')"><sub>29</sub>Cu <p>Miedź</p> <p>63,55</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Cynk','65.39','30','Zn','color9')"><sub>30</sub>Zn <p>Cynk</p> <p>65,39</p></td>
+            <td class="pierwiastek color6" onclick="OpenModal('Gal','69.72','31','Ga','color6')"><sub>31</sub>Ga <p>Gal</p> <p>69,72</p></td>
+            <td class="pierwiastek color5" onclick="OpenModal('German','72.61','32','Ge','color5')"><sub>32</sub>Ge <p>German</p> <p>72,61</p></td>
+            <td class="pierwiastek color5" onclick="OpenModal('Arsen','74.92','33','As','color5')"><sub>33</sub>As <p>Arsen</p> <p>74,92</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Selen','78.96','34','Se','color1')"><sub>34</sub>Se <p>Selen</p> <p>78,96</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Brom','79.90','35','Br','color1')"><sub>35</sub>Br <p>Brom</p> <p>79,90</p></td>
+            <td class="pierwiastek color4" onclick="OpenModal('Krypton','83.80','36','Kr','color4')"><sub>36</sub>Kr <p>Krypton</p> <p>83,80</p></td>
+
+        </tr>
+
+        <tr>
+            <td class="okres">5</td>
+            <td class="pierwiastek color2" onclick="OpenModal('Rubid','85.47','37','Rb','color2')"><sub>37</sub>Rb <p>Rubid</p> <p>85,47</p></td>
+            <td class="pierwiastek color3" onclick="OpenModal('Stront','87.62','38','Sr','color3')"><sub>38</sub>Sr <p>Stront</p> <p>87,62</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Itr','88.91','39','Y','color9')"><sub>39</sub>Y <p>Itr</p> <p>88,91</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Cyrkon','91.22','40','Zr','color9')"><sub>40</sub>Zr <p>Cyrkon</p> <p>91,22</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Niob','92.91','41','Nb','color9')"><sub>41</sub>Nb <p>Niob</p> <p>92,91</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Molibden','95.94','42','Mo','color9')"><sub>42</sub>Mo <p>Molibden</p> <p>95,94</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Technet','97.91','43','Tc','color9')"><sub>43</sub>Tc <p>Technet</p> <p>97,91</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Ruten','101.07','44','Ru','color9')"><sub>44</sub>Ru <p>Ruten</p> <p>101,07</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Rod','102.91','45','Rh','color9')"><sub>45</sub>Rh <p>Rod</p> <p>102,91</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Pallad','106.42','46','Pd','color9')"><sub>46</sub>Pd <p>Pallad</p> <p>106,42</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Srebro','107.87','47','Ag','color9')"><sub>47</sub>Ag <p>Srebro</p> <p>107,87</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Kadm','112.41','48','Cd','color9')"><sub>48</sub>Cd <p>Kadm</p> <p>112,41</p></td>
+            <td class="pierwiastek color6" onclick="OpenModal('Ind','114.82','49','In','color6')"><sub>49</sub>In <p>Ind</p> <p>114,82</p></td>
+            <td class="pierwiastek color6" onclick="OpenModal('Cyna','118.71','50','Sn','color6')"><sub>50</sub>Sn <p>Cyna</p> <p>118,71</p></td>
+            <td class="pierwiastek color5" onclick="OpenModal('Antymon','121.76','51','Sb','color5')"><sub>51</sub>Sb <p>Antymon</p> <p>121,76</p></td>
+            <td class="pierwiastek color5" onclick="OpenModal('Tellur','127.60','52','Te','color5')"><sub>52</sub>Te <p>Tellur</p> <p>127,60</p></td>
+            <td class="pierwiastek color1" onclick="OpenModal('Jod','126.90','53','I','color1')"><sub>53</sub>I <p>Jod</p> <p>126,90</p></td>
+            <td class="pierwiastek color4" onclick="OpenModal('Ksenon','131.29','54','Xe','color4')"><sub>54</sub>Xe <p>Ksenon</p> <p>131,29</p></td>
+        </tr>
+
+        <tr>
+            <td class="okres">6</td>
+            <td class="pierwiastek color2" onclick="OpenModal('Cez','132.91','55','Cs','color2')"><sub>55</sub>Cs <p>Cez</p> <p>132,91</p></td>
+            <td class="pierwiastek color3" onclick="OpenModal('Bar','137.33','56','Ba','color3')"><sub>56</sub>Ba <p>Bar</p> <p>137,33</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Lantan','138.91','57','La','color7')"><sub>57</sub>La* <p>Lantan</p> <p>138,91</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Hafn','178.49','72','Hf','color9')"><sub>72</sub>Hf <p>Hafn</p> <p>178,49</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Tantal','180.95','73','Ta','color9')"><sub>73</sub>Ta <p>Tantal</p> <p>180,95</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Wolfram','183.84','74','W','color9')"><sub>74</sub>W <p>Wolfram</p> <p>183,84</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Ren','186.21','75','Re','color9')"><sub>75</sub>Re <p>Ren</p> <p>186,21</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Osm','190.23','76','Os','color9')"><sub>76</sub>Os <p>Osm</p> <p>190,23</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Iryd','192.22','77','Ir','color9')"><sub>77</sub>Ir <p>Iryd</p> <p>192,22</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Platyna','195.08','78','Pt','color9')"><sub>78</sub>Pt <p>Platyna</p> <p>195,08</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Złoto','196.97','79','Au','color9')"><sub>79</sub>Au <p>Złoto</p> <p>196,97</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Rtęć','200.56','80','Hg','color9')"><sub>80</sub>Hg <p>Rtęć</p> <p>200,56</p></td>
+            <td class="pierwiastek color6" onclick="OpenModal('Tal','204.38','81','Tl','color6')"><sub>81</sub>Tl <p>Tal</p> <p>204,38</p></td>
+            <td class="pierwiastek color6" onclick="OpenModal('Ołów','207.20','82','Pd','color6')"><sub>82</sub>Pb <p>Ołów</p> <p>207,20</p></td>
+            <td class="pierwiastek color6" onclick="OpenModal('Bizmut','208.98','83','Bi','color6')"><sub>83</sub>Bi <p>Bizmut</p> <p>208,98</p></td>
+            <td class="pierwiastek color6" onclick="OpenModal('Polon','208.98','84','Po','color6')"><sub>84</sub>Po <p>Polon</p> <p>208,98</p></td>
+            <td class="pierwiastek color5" onclick="OpenModal('Astat','209.99','85','At','color5')"><sub>85</sub>At <p>Astat</p> <p>209,99</p></td>
+            <td class="pierwiastek color4" onclick="OpenModal('Radon','222.02','86','Rd','color4')"><sub>86</sub>Rd <p>Radon</p> <p>222,02</p></td>
+        </tr>
+
+        <tr>
+            <td class="okres">7</td>
+            <td class="pierwiastek color2" onclick="OpenModal('Frans','223.02','87','Fr','color2')"><sub>87</sub>Fr <p>Frans</p> <p>223,02</p></td>
+            <td class="pierwiastek color3" onclick="OpenModal('Rad','226.03','88','Ra','color3')"><sub>88</sub>Ra <p>Rad</p> <p>226,03</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Aktyn','227.03','89','Ac','color8')"><sub>89</sub>Ac** <p>Aktyn</p> <p>227,03</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Ruterford','261.11','104','Re','color6')"><sub>104</sub>Rf <p>Ruterford</p> <p>261,11</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Dubn','263.11','105','Db','color6')"><sub>105</sub>Db <p>Dubn</p> <p>263,11</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Seaborg','265.12','106','Sg','color6')"><sub>106</sub>Sg <p>Seaborg</p> <p>265,12</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Bohr','264.10','107','Bh','color6')"><sub>107</sub>Bh <p>Bohr</p> <p>264,10</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Has','269.10','108','Hs','color6')"><sub>108</sub>Hs <p>Has</p> <p>269,10</p></td>
+            <td class="pierwiastek color10" onclick="OpenModal('Meitner','268.10','109','Mt','color10')"><sub>109</sub>Mt <p>Meitner</p> <p>268,10</p></td>
+            <td class="pierwiastek color10" onclick="OpenModal('Darmstadt','281.10','110','Ds','color10')"><sub>110</sub>Ds <p>Darmstadt</p> <p>281,10</p></td>
+            <td class="pierwiastek color10" onclick="OpenModal('Roentgen','280','111','Rg','color10')"><sub>111</sub>Rg <p>Roentgen</p> <p>280.00</p></td>
+            <td class="pierwiastek color9" onclick="OpenModal('Kopernik','285','112','Cn','color9')"><sub>112</sub>Cn <p>Kopernik</p> <p>285.00</p></td>
+            <td class="pierwiastek color10" onclick="OpenModal('Nihonium','284','113','Nh','color10')"><sub>113</sub>Nh <p>Nihonium</p> <p>284</p></td>
+            <td class="pierwiastek color6" onclick="OpenModal('Flerow','289','114','Fl','color6')"><sub>114</sub>Fl <p>Flerow</p> <p>289.00</p></td>
+            <td class="pierwiastek color10" onclick="OpenModal('Moscovium','288','115','Mc','color10')"><sub>115</sub>Mc <p>Moscovium</p> <p>288.00</p></td>
+            <td class="pierwiastek color10" onclick="OpenModal('Liwermor','292','116','Lv','color10')"><sub>116</sub>Lv <p>Liwermor</p> <p>292.00</p></td>
+            <td class="pierwiastek color10" onclick="OpenModal('Tennessine','294','117','Ts','color10')"><sub>117</sub>Ts <p>Tennessine</p> <p>294</p></td>
+            <td class="pierwiastek color10" onclick="OpenModal('Oganesson','294','118','Og','color10')"><sub>118</sub>Og <p>Oganesson</p> <p>294.00</p></td>
+        </tr>
+
+        <tr>
+            <td class="przedzial" colspan="18">chrześcijanintańczy</td>
+        </tr>
+
+        <tr>
+            <td class="wypelniacz" rowspan="2" colspan="2"></td>
+
+            <td>*)</td>
+
+            <td class="pierwiastek color7" onclick="OpenModal('Cer','140.12','58','Ce','color7')"><sub>58</sub>Ce <p>Cer</p> <p>140,12</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Prazeodym','140.91','59','Pr','color7')"><sub>59</sub>Pr <p>Prazeodym</p> <p>140,91</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Neodym','144.24','60','Nd','color7')"><sub>60</sub>Nd <p>Neodym</p> <p>144,24</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Promet','145.00','61','Pm','color7')"><sub>61</sub>Pm <p>Promet</p> <p>145.00</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Samar','150.36','62','Sm','color7')"><sub>62</sub>Sm <p>Samar</p> <p>150,36</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Europ','151.96','63','Eu','color7')"><sub>63</sub>Eu <p>Europ</p> <p>151,96</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Gadolin','157.25','64','Gd','color7')"><sub>64</sub>Gd <p>Gadolin</p> <p>157,25</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Terb','158.93','65','Tb','color7')"><sub>65</sub>Tb <p>Terb</p> <p>158,93</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Dysproz','162.50','66','Dy','color7')"><sub>66</sub>Dy <p>Dysproz</p> <p>162,50</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Holm','164.93','67','Ho','color7')"><sub>67</sub>Ho <p>Holm</p> <p>164,93</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Erb','167.26','68','Er','color7')"><sub>68</sub>Er <p>Erb</p> <p>167,26</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Tul','168.93','69','Tm','color7')"><sub>69</sub>Tm <p>Tul</p> <p>168,93</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Iterb','173.05','70','Yb','color7')"><sub>70</sub>Yb <p>Iterb</p> <p>173,05</p></td>
+            <td class="pierwiastek color7" onclick="OpenModal('Lutet','174.97','71','Lu','color7')"><sub>71</sub>Lu <p>Lutet</p> <p>174,97</p></td>
+
+        </tr>
+
+        <tr>
+            <td>**)</td>
+
+            <td class="pierwiastek color8" onclick="OpenModal('Tor','232.04','90','Th','color8')"><sub>90</sub>Th <p>Tor</p> <p>232,04</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Protaktyn','231.04','91','Pa','color8')"><sub>91</sub>Pa <p>Protaktyn</p> <p>231,04</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Uran','238.03','92','U','color8')"><sub>92</sub>U <p>Uran</p> <p>238,03</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Neptun','237.05','93','Np','color8')"><sub>93</sub>Np <p>Neptun</p> <p>237,05</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Pluton','244.06','94','Pu','color8')"><sub>94</sub>Pu <p>Pluton</p> <p>244,06</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Ameryk','243.06','95','Am','color8')"><sub>95</sub>Am <p>Ameryk</p> <p>243,06</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Kiur','247.07','96','Cm','color8')"><sub>96</sub>Cm <p>Kiur</p> <p>247,07</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Berkel','247.07','97','Bk','color8')"><sub>97</sub>Bk <p>Berkel</p> <p>247,07</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Kaliforn','251.08','98','Cf','color8')"><sub>98</sub>Cf <p>Kaliforn</p> <p>251,08</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Einstein','252.09','99','Es','color8')"><sub>99</sub>Es <p>Einstein</p> <p>252,09</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Ferm','257.10','100','Fm','color8')"><sub>100</sub>Fm <p>Ferm</p> <p>257,10</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Mendelew','258.10','101','Md','color8')"><sub>101</sub>Md <p>Mendelew</p> <p>258,10</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Nobel','259.10','102','No','color8')"><sub>102</sub>No <p>Nobel</p> <p>259,10</p></td>
+            <td class="pierwiastek color8" onclick="OpenModal('Lawrans','262.11','103','Lr','color8')"><sub>103</sub>Lr <p>Lawrans</p> <p>262,11</p></td>
+
+        </tr>
+
+    </table>
+
+        <div id="modal-img" class="modal-img-cls">
+                <span class="close-img" onclick="closeImg()">&times;</span>
+                <img class="modal-img-content" id="img01">
+                <div id="caption-img"></div>
+            </div><div id="modal-img" class="modal-img-cls">
+                <span class="close-img" onclick="closeImg()">&times;</span>
+                <img class="modal-img-content" id="img01">
+                <div id="caption-img"></div>
+            </div>
+        <div id="modal-div"></div>
+    </div>
+</body>
+</html>
